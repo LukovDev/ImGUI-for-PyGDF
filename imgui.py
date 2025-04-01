@@ -111,7 +111,7 @@ class PygameRenderer(ProgrammablePipelineRenderer):
 # Класс интерфейса:
 class ImGUI:
     # Инициализация:
-    def __init__(self, window_size: vec2, ini_file_path: str, renderer: any = None) -> None:
+    def __init__(self, window_size: vec2, ini_file_path: str = None, renderer: any = None) -> None:
         self.ini_file_path = ini_file_path if isinstance(ini_file_path, str) else ""
         self.impl = None
         self.io   = None
